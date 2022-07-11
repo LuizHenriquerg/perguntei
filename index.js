@@ -1,17 +1,15 @@
 const express = require('express');
 const app = express();
-
-const bodyParser = require('body-parse');
+const bodyParser = require('body-parser');
+const rotas = require('./routes')
 
 app.set('view engine', 'ejs');
 
 app.use(express.static('public')); 
-app.use(bodyParser.urlencode({extended: false}));
+app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
-app.get('/', function(req, res){
-    res.send('Olá!')
-});
+app.use('/', rotas);
 
 app.listen(8080, () => {
     console.log('Site on!')

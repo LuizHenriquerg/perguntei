@@ -1,0 +1,70 @@
+<%- include('./components/header.ejs') %>
+<%- include('components/navbar.ejs') %>
+
+<!-- BODY -->
+
+<div class="container">
+    <div class="row d-flex justify-content-center">
+        <div class="col-10 mt-4">
+            <div class="card shadow-sm p-1 mb-5 bg-body rounded">
+                <div class="card-body">
+                    <h4 class="text-dark fw-bolder h4-titulo d-flex">
+                        <div class="vr"></div>
+                        <div class="ms-2 mt-2">
+                            <% if(cat == true) { %>
+                                <%= categoria %> 
+                            <% } else { %> Perguntas recentes  <% } %>
+                        </div>
+                    </h4>
+                    
+                    <div class="row mt-5 d-flex justify-content-start">
+                        <div class="col-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <p>Como criar uma api REST em Node.js?Como criar uma api REST em Node.js?Como criar uma api REST em Node.js?Como criar uma api REST em Node.js?Como criar uma api REST em Node.js?Como criar uma api REST em Node.js?</p>
+                                </div>
+                                <div class="card-footer d-flex">
+                                    <span class="text-dark mt-2">Categoria: <span class="text-muted">Node.js</span></span>
+                                    <span class="text-dark mt-2 ms-4 mx-3">Número de respostas: <span class="text-muted">5</span></span>
+                                    <div class="text-end ms-3">
+                                        <a class="btn btn-outline-secondary" href="#">
+                                            Acessar
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+                                                <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <p>Como criar uma api REST em Node.js?Como criar uma api REST em Node.js?Como criar uma api REST em Node.js?Como criar uma api REST em Node.js?Como criar uma api REST em Node.js?Como criar uma api REST em Node.js?</p>
+                                </div>
+                                <div class="card-footer d-flex">
+                                    <span class="text-dark mt-2">Categoria: <span class="text-muted">Node.js</span></span>
+                                    <span class="text-dark mt-2 ms-4 mx-3">Número de respostas: <span class="text-muted">5</span></span>
+                                    <div class="text-end ms-3">
+                                        <a class="btn btn-outline-secondary" href="#">
+                                            Acessar
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+                                                <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- END BODY -->
+
+<%- include('components/footer.ejs') %>
