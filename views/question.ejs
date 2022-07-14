@@ -1,0 +1,38 @@
+<%- include('./components/header.ejs') %>
+<%- include('components/navbar.ejs') %>
+
+<!-- BODY -->
+
+<div class="container">
+    <div class="row d-flex justify-content-center">
+        <% if (question != undefined) { %>
+            <div class="col-8 mt-4 bg-light p-3" style="border-radius: 0.3rem;">
+                <h4><%= question.titulo %></h4>
+                <p class="text-break"><%= question.descricao %></p>
+            </div>
+            <div class="col-8 mt-4 bg-light p-3" style="border-radius: 0.3rem;">
+                <div class="fw-bolder">Respostas</div>
+                <% answers.forEach(respostas => { %>
+                    <div class="card mt-4">
+                        <div class="card-body">
+                            <p><%= respostas.resposta %></p>
+                        </div>
+                    </div>
+                <% }) %>
+                <form action="/answer/<%= question.id %>" method="post">
+                    <div class="form-group mt-3">
+                        <label class="fw-bolder" for="exampleInputEmail1">Sua resposta:</label>
+                        <textarea class="textarea-question" name="resposta" id="duvida_text" rows="5"></textarea>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <button type="submit" class="btn btn-dark">Responder</button>
+                    </div>
+                </form>
+            </div>
+        <% } %>
+    </div>
+</div>
+
+<!-- END BODY -->
+
+<%- include('components/footer.ejs') %>

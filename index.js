@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const rotas = require('./routes')
+const connection = require('./utils/database/database');
 
 app.set('view engine', 'ejs');
 
